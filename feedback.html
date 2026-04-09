@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Кері байланыс | Web жобалау</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a class="skip" href="#content">Негізгі мазмұнға өту</a>
+
+<header>
+  <div class="topbar">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">W</div>
+      <div>
+        <h1>Web жобалау</h1>
+        <p class="sub">Кері байланыс</p>
+      </div>
+    </div>
+
+    <nav aria-label="Негізгі мәзір">
+      <a class="navlink" href="index.html">Басты бет</a>
+      <a class="navlink" href="theory.html">Теориялық сабақтар</a>
+      <a class="navlink" href="tests.html">Тесттер</a>
+      <a class="navlink" href="glossary.html">Глоссарий</a>
+      <a class="navlink" href="trainer.html">Тренажер</a>
+      <a class="navlink active" href="feedback.html">Кері байланыс</a>
+      <a class="navlink" href="profile.html">Профиль</a>
+      <a class="navlink" href="author.html">Автор</a>
+    </nav>
+<div class="profileContainer"></div>
+  </div>
+</header>
+
+<main id="content">
+  <section class="hero">
+    <h2>Кері байланыс қалдыру</h2>
+    <p>Оқулық туралы пікіріңізді жазыңыз. </p>
+<div class="slideshow" data-interval="4500" aria-label="Слайд-шоу">
+  <div class="slides">
+    <div class="slide">
+      <div class="slideTop">
+        <div class="slideTitle">Ереже</div>
+        <div class="slideTag">HTML</div>
+      </div>
+      <p class="slideText">Тегтерді дұрыс жабу және мағыналы (семантикалық) тегтерді қолдану бетті түсінікті етеді.</p>
+    </div>
+    <div class="slide">
+      <div class="slideTop">
+        <div class="slideTitle">Кеңес</div>
+        <div class="slideTag">CSS</div>
+      </div>
+      <p class="slideText">Дизайн жинақы болсын: 2–3 негізгі түс, жеткілікті аралық, оқуға ыңғайлы қаріп өлшемі.</p>
+    </div>
+    <div class="slide">
+      <div class="slideTop">
+        <div class="slideTitle">Тәжірибе</div>
+        <div class="slideTag">JS</div>
+      </div>
+      <p class="slideText">Интерактивті шағын қадаммен бастаңыз: батырмаға click оқиғасын қосып, мәтінді өзгертіңіз.</p>
+    </div>
+  </div>
+  <div class="dots" aria-label="Слайдты таңдау"></div>
+</div>
+
+  </section>
+
+  <div class="grid">
+    <section class="card feedbackFormCard">
+      <h3>Форма</h3>
+      <form class="form" id="feedbackForm">
+        <div>
+          <label for="fio">ФИО (аты-жөні)</label>
+          <input id="fio" type="text" placeholder="Мысалы: Әлихан Нұрланұлы" required />
+        </div>
+        <div>
+          <label for="comment">Пікір / ұсыныс</label>
+          <textarea id="comment" placeholder="Не ұнады? Нені жақсартуға болады?" required></textarea>
+        </div>
+
+        <div class="btnrow">
+          <button class="btn primary" type="submit">Жіберу</button>
+</div>
+
+        <div class="notice" id="feedbackNotice" role="status" aria-live="polite"></div>
+      </form>
+</section>
+
+    <aside class="card feedbackAside">
+      <h3>Соңғы пікірлер</h3>
+      <div id="feedbackList" class="list"></div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  © 2026 • Кері байланыс • “Web жобалау” онлайн оқулығы
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

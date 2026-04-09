@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Тесттер | Web жобалау</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a class="skip" href="#content">Негізгі мазмұнға өту</a>
+
+<header>
+  <div class="topbar">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">W</div>
+      <div>
+        <h1>Web жобалау</h1>
+        <p class="sub">Тесттер</p>
+      </div>
+    </div>
+
+    <nav aria-label="Негізгі мәзір">
+      <a class="navlink" href="index.html">Басты бет</a>
+      <a class="navlink" href="theory.html">Теориялық сабақтар</a>
+      <a class="navlink active" href="tests.html">Тесттер</a>
+      <a class="navlink" href="glossary.html">Глоссарий</a>
+      <a class="navlink" href="trainer.html">Тренажер</a>
+      <a class="navlink" href="feedback.html">Кері байланыс</a>
+      <a class="navlink" href="profile.html">Профиль</a>
+      <a class="navlink" href="author.html">Автор</a>
+    </nav>
+<div class="profileContainer"></div>
+  </div>
+</header>
+
+<main id="content">
+  <section class="hero">
+    <h2>Білімді тексеру</h2>
+    <p>
+      Әр сабақ бойынша 10 тест тапсырмасы берілген. Таңдағаннан кейін “Тексеру” батырмасын басыңыз.
+      Дұрыс жауаптар жасыл, қате жауаптар қызыл түспен белгіленеді.
+    </p>
+<div class="slideshow" data-interval="4500" aria-label="Слайд-шоу">
+  <div class="slides">
+    <div class="slide">
+      <div class="slideTop">
+        <div class="slideTitle">Ереже</div>
+        <div class="slideTag">HTML</div>
+      </div>
+      <p class="slideText">Тегтерді дұрыс жабу және мағыналы (семантикалық) тегтерді қолдану бетті түсінікті етеді.</p>
+    </div>
+    <div class="slide">
+      <div class="slideTop">
+        <div class="slideTitle">Кеңес</div>
+        <div class="slideTag">CSS</div>
+      </div>
+      <p class="slideText">Дизайн жинақы болсын: 2–3 негізгі түс, жеткілікті аралық, оқуға ыңғайлы қаріп өлшемі.</p>
+    </div>
+    <div class="slide">
+      <div class="slideTop">
+        <div class="slideTitle">Тәжірибе</div>
+        <div class="slideTag">JS</div>
+      </div>
+      <p class="slideText">Интерактивті шағын қадаммен бастаңыз: батырмаға click оқиғасын қосып, мәтінді өзгертіңіз.</p>
+    </div>
+  </div>
+  <div class="dots" aria-label="Слайдты таңдау"></div>
+</div>
+
+  </section>
+
+  
+  <section class="testsSplit" aria-label="Тесттер навигациясы">
+    <aside class="testsSidebar card">
+      <h3>Тесттер мәзірі</h3>
+      <p class="small">Сабақты таңдаңыз. Әр тест бөлек панельде ашылады.</p>
+      <div class="testTopicNav">
+        <button class="testTopicBtn" type="button" data-target="test-l1">1) Web-жобалау негізі (10 сұрақ)</button> <button class="testTopicBtn" type="button" data-target="test-l2">2) Веб-бет жасау (10 сұрақ)</button> <button class="testTopicBtn" type="button" data-target="test-l3">3) CSS ұғымы (10 сұрақ)</button> <button class="testTopicBtn" type="button" data-target="test-l4">4) JavaScript-тен танысу (10 сұрақ)</button>
+      </div>
+    </aside>
+
+    <div class="testPanels">
+      <section class="card testPanel" id="test-l1" data-test-panel="l1" hidden>
+  <div class="testPanelHead">
+    <h3>1) Web-жобалау негізі (10 сұрақ)</h3>
+    <a class="btn" href="theory.html#l1">Сабаққа оралу</a>
+  </div>
+
+  <form class="quiz" data-quiz="l1" id="quiz-l1">
+    <div class="quizLayout">
+      <div class="quizQuestions">
+        <div class="q" data-q="1">
+        <p>1. Web-жобалау дегеніміз не?</p>
+        <label><input type="radio" name="l1q1" value="a"> Компьютерді жөндеу процесі</label>
+        <label><input type="radio" name="l1q1" value="b"> Веб-сайт/веб-бет жасау және дамыту процесі</label>
+        <label><input type="radio" name="l1q1" value="c"> Тек мәтін теру</label>
+        <label><input type="radio" name="l1q1" value="d"> Файлдарды сығу</label>
+      </div>
+<div class="q" data-q="2">
+        <p>2. Браузердің негізгі қызметі:</p>
+        <label><input type="radio" name="l1q2" value="a"> ОЖ орнату</label>
+        <label><input type="radio" name="l1q2" value="b"> Драйвер жаңарту</label>
+        <label><input type="radio" name="l1q2" value="c"> HTML-ді оқып, веб-бетті көрсету</label>
+        <label><input type="radio" name="l1q2" value="d"> Процессорды үдету</label>
+      </div>
+<div class="q" data-q="3">
+        <p>3. “Клиент–сервер” моделінде клиент — бұл:</p>
+        <label><input type="radio" name="l1q3" value="a"> Пайдаланушының браузері/құрылғысы</label>
+        <label><input type="radio" name="l1q3" value="b"> Тек флешка</label>
+        <label><input type="radio" name="l1q3" value="c"> Кабель</label>
+        <label><input type="radio" name="l1q3" value="d"> Принтер</label>
+      </div>
+<div class="q" data-q="4">
+        <p>4. URL дегеніміз:</p>
+        <label><input type="radio" name="l1q4" value="a"> Компьютердің маркасы</label>
+        <label><input type="radio" name="l1q4" value="b"> Суреттің өлшемі</label>
+        <label><input type="radio" name="l1q4" value="c"> Дизайн стилі</label>
+        <label><input type="radio" name="l1q4" value="d"> Ресурс мекенжайы (сілтеме)</label>
+      </div>
+<div class="q" data-q="5">
+        <p>5. HTML нені қамтамасыз етеді?</p>
+        <label><input type="radio" name="l1q5" value="a"> Тек анимация</label>
+        <label><input type="radio" name="l1q5" value="b"> Веб-беттің құрылымын</label>
+        <label><input type="radio" name="l1q5" value="c"> Тек түстерді</label>
+        <label><input type="radio" name="l1q5" value="d"> Тек дыбысты</label>
+      </div>
+<div class="q" data-q="6">
+        <p>6. CSS нені өзгертеді?</p>
+        <label><input type="radio" name="l1q6" value="a"> Серверді</label>
+        <label><input type="radio" name="l1q6" value="b"> URL-ді</label>
+        <label><input type="radio" name="l1q6" value="c"> Дизайн мен безендіруді</label>
+        <label><input type="radio" name="l1q6" value="d"> Интернет жылдамдығын</label>
+      </div>
+<div class="q" data-q="7">
+        <p>7. JavaScript-тің рөлі:</p>
+        <label><input type="radio" name="l1q7" value="a"> Интерактив қосу</label>
+        <label><input type="radio" name="l1q7" value="b"> Тек мәтін сақтау</label>
+        <label><input type="radio" name="l1q7" value="c"> Компьютер жинау</label>
+        <label><input type="radio" name="l1q7" value="d"> Қағазға басу</label>
+      </div>
+<div class="q" data-q="8">
+        <p>8. Веб-бет әдетте қайда ашылады?</p>
+        <label><input type="radio" name="l1q8" value="a"> Word-та</label>
+        <label><input type="radio" name="l1q8" value="b"> Excel-де</label>
+        <label><input type="radio" name="l1q8" value="c"> Paint-та</label>
+        <label><input type="radio" name="l1q8" value="d"> Браузерде</label>
+      </div>
+<div class="q" data-q="9">
+        <p>9. Веб-бет пен веб-сайт айырмашылығы:</p>
+        <label><input type="radio" name="l1q9" value="a"> Айырмашылығы жоқ</label>
+        <label><input type="radio" name="l1q9" value="b"> Сайт — бірнеше беттен тұратын жүйе, бет — соның бір бөлігі</label>
+        <label><input type="radio" name="l1q9" value="c"> Бет — тек сурет</label>
+        <label><input type="radio" name="l1q9" value="d"> Сайт — флешка</label>
+      </div>
+<div class="q" data-q="10">
+        <p>10. Веб-жобалауда ең дұрыс реттілік:</p>
+        <label><input type="radio" name="l1q10" value="a"> JS → CSS → HTML</label>
+        <label><input type="radio" name="l1q10" value="b"> CSS → HTML → JS</label>
+        <label><input type="radio" name="l1q10" value="c"> HTML → CSS → JS</label>
+        <label><input type="radio" name="l1q10" value="d"> Тек CSS</label>
+      </div>
+        <div class="btnrow">
+        <button class="btn primary" type="submit">Тексеру</button>
+      </div>
+      </div>
+
+      <aside class="quizResultBox" aria-live="polite">
+        <h4>Нәтиже</h4>
+        <p class="result">Тестті орындап, «Тексеру» батырмасын басыңыз.</p>
+        <div class="resultCounts"></div>
+        <div class="resultHint small">Нәтиже осы жерде бірден көрсетіледі.</div>
+      </aside>
+    </div>
+  </form>
+</section> <section class="card testPanel" id="test-l2" data-test-panel="l2" hidden>
+  <div class="testPanelHead">
+    <h3>2) Веб-бет жасау (10 сұрақ)</h3>
+    <a class="btn" href="theory.html#l2">Сабаққа оралу</a>
+  </div>
+
+  <form class="quiz" data-quiz="l2" id="quiz-l2">
+    <div class="quizLayout">
+      <div class="quizQuestions">
+        <div class="q" data-q="1">
+        <p>1. HTML құжатының дұрыс басталуы:</p>
+        <label><input type="radio" name="l2q1" value="a"> &lt;!doctype html&gt;</label>
+        <label><input type="radio" name="l2q1" value="b"> &lt;start&gt;</label>
+        <label><input type="radio" name="l2q1" value="c"> &lt;begin&gt;</label>
+        <label><input type="radio" name="l2q1" value="d"> &lt;main&gt;</label>
+      </div>
+<div class="q" data-q="2">
+        <p>2. Басты тақырып тегі:</p>
+        <label><input type="radio" name="l2q2" value="a"> &lt;p&gt;</label>
+        <label><input type="radio" name="l2q2" value="b"> &lt;h1&gt;</label>
+        <label><input type="radio" name="l2q2" value="c"> &lt;div&gt;</label>
+        <label><input type="radio" name="l2q2" value="d"> &lt;img&gt;</label>
+      </div>
+<div class="q" data-q="3">
+        <p>3. Сілтеме жасау тегі:</p>
+        <label><input type="radio" name="l2q3" value="a"> &lt;link&gt;</label>
+        <label><input type="radio" name="l2q3" value="b"> &lt;url&gt;</label>
+        <label><input type="radio" name="l2q3" value="c"> &lt;ref&gt;</label>
+        <label><input type="radio" name="l2q3" value="d"> &lt;a&gt;</label>
+      </div>
+<div class="q" data-q="4">
+        <p>4. Сурет енгізу тегі:</p>
+        <label><input type="radio" name="l2q4" value="a"> &lt;pic&gt;</label>
+        <label><input type="radio" name="l2q4" value="b"> &lt;photo&gt;</label>
+        <label><input type="radio" name="l2q4" value="c"> &lt;img&gt;</label>
+        <label><input type="radio" name="l2q4" value="d"> &lt;image&gt;</label>
+      </div>
+<div class="q" data-q="5">
+        <p>5. Абзац тегі:</p>
+        <label><input type="radio" name="l2q5" value="a"> &lt;p&gt;</label>
+        <label><input type="radio" name="l2q5" value="b"> &lt;h3&gt;</label>
+        <label><input type="radio" name="l2q5" value="c"> &lt;ul&gt;</label>
+        <label><input type="radio" name="l2q5" value="d"> &lt;span&gt;</label>
+      </div>
+<div class="q" data-q="6">
+        <p>6. Тізім (маркерлі) тегі:</p>
+        <label><input type="radio" name="l2q6" value="a"> &lt;ol&gt;</label>
+        <label><input type="radio" name="l2q6" value="b"> &lt;ul&gt;</label>
+        <label><input type="radio" name="l2q6" value="c"> &lt;li&gt;</label>
+        <label><input type="radio" name="l2q6" value="d"> &lt;list&gt;</label>
+      </div>
+<div class="q" data-q="7">
+        <p>7. &lt;head&gt; бөлімінде көбіне не болады?</p>
+        <label><input type="radio" name="l2q7" value="a"> Негізгі мәтін</label>
+        <label><input type="radio" name="l2q7" value="b"> Суреттер</label>
+        <label><input type="radio" name="l2q7" value="c"> Батырмалар</label>
+        <label><input type="radio" name="l2q7" value="d"> meta, title, стиль/скрипт сілтемелері</label>
+      </div>
+<div class="q" data-q="8">
+        <p>8. Элементке class беру мысалы:</p>
+        <label><input type="radio" name="l2q8" value="a"> &lt;p css="a"&gt;</label>
+        <label><input type="radio" name="l2q8" value="b"> &lt;p idd="a"&gt;</label>
+        <label><input type="radio" name="l2q8" value="c"> &lt;p class="a"&gt;</label>
+        <label><input type="radio" name="l2q8" value="d"> &lt;p styleName="a"&gt;</label>
+      </div>
+<div class="q" data-q="9">
+        <p>9. Суретке балама мәтін қай атрибутта жазылады?</p>
+        <label><input type="radio" name="l2q9" value="a"> alt</label>
+        <label><input type="radio" name="l2q9" value="b"> href</label>
+        <label><input type="radio" name="l2q9" value="c"> type</label>
+        <label><input type="radio" name="l2q9" value="d"> lang</label>
+      </div>
+<div class="q" data-q="10">
+        <p>10. &lt;body&gt; бөлімінде не орналасады?</p>
+        <label><input type="radio" name="l2q10" value="a"> Сыртқы CSS файлы</label>
+        <label><input type="radio" name="l2q10" value="b"> Экранда көрінетін мазмұн</label>
+        <label><input type="radio" name="l2q10" value="c"> Тек meta</label>
+        <label><input type="radio" name="l2q10" value="d"> Тек title</label>
+      </div>
+        <div class="btnrow">
+        <button class="btn primary" type="submit">Тексеру</button>
+      </div>
+      </div>
+
+      <aside class="quizResultBox" aria-live="polite">
+        <h4>Нәтиже</h4>
+        <p class="result">Тестті орындап, «Тексеру» батырмасын басыңыз.</p>
+        <div class="resultCounts"></div>
+        <div class="resultHint small">Нәтиже осы жерде бірден көрсетіледі.</div>
+      </aside>
+    </div>
+  </form>
+</section> <section class="card testPanel" id="test-l3" data-test-panel="l3" hidden>
+  <div class="testPanelHead">
+    <h3>3) CSS ұғымы (10 сұрақ)</h3>
+    <a class="btn" href="theory.html#l3">Сабаққа оралу</a>
+  </div>
+
+  <form class="quiz" data-quiz="l3" id="quiz-l3">
+    <div class="quizLayout">
+      <div class="quizQuestions">
+        <div class="q" data-q="1">
+        <p>1. CSS не үшін қолданылады?</p>
+        <label><input type="radio" name="l3q1" value="a"> HTML-ді өшіру үшін</label>
+        <label><input type="radio" name="l3q1" value="b"> Сервер құру үшін</label>
+        <label><input type="radio" name="l3q1" value="c"> Дизайн/стиль беру үшін</label>
+        <label><input type="radio" name="l3q1" value="d"> Интернет қосу үшін</label>
+      </div>
+<div class="q" data-q="2">
+        <p>2. Class селекторы қалай жазылады?</p>
+        <label><input type="radio" name="l3q2" value="a"> .box</label>
+        <label><input type="radio" name="l3q2" value="b"> #box</label>
+        <label><input type="radio" name="l3q2" value="c"> box()</label>
+        <label><input type="radio" name="l3q2" value="d"> @box</label>
+      </div>
+<div class="q" data-q="3">
+        <p>3. Id селекторы:</p>
+        <label><input type="radio" name="l3q3" value="a"> .title</label>
+        <label><input type="radio" name="l3q3" value="b"> #title</label>
+        <label><input type="radio" name="l3q3" value="c"> title#</label>
+        <label><input type="radio" name="l3q3" value="d"> $title</label>
+      </div>
+<div class="q" data-q="4">
+        <p>4. Box model құрамына кірмейді:</p>
+        <label><input type="radio" name="l3q4" value="a"> content</label>
+        <label><input type="radio" name="l3q4" value="b"> padding</label>
+        <label><input type="radio" name="l3q4" value="c"> border</label>
+        <label><input type="radio" name="l3q4" value="d"> url</label>
+      </div>
+<div class="q" data-q="5">
+        <p>5. Мәтін түсін өзгерту қасиеті:</p>
+        <label><input type="radio" name="l3q5" value="a"> text-style</label>
+        <label><input type="radio" name="l3q5" value="b"> font-size</label>
+        <label><input type="radio" name="l3q5" value="c"> color</label>
+        <label><input type="radio" name="l3q5" value="d"> border</label>
+      </div>
+<div class="q" data-q="6">
+        <p>6. Ішкі бос орын (элемент ішіндегі) қай қасиет?</p>
+        <label><input type="radio" name="l3q6" value="a"> padding</label>
+        <label><input type="radio" name="l3q6" value="b"> margin</label>
+        <label><input type="radio" name="l3q6" value="c"> gap</label>
+        <label><input type="radio" name="l3q6" value="d"> align</label>
+      </div>
+<div class="q" data-q="7">
+        <p>7. Сыртқы арақашықтық (элементтен тыс) қасиеті:</p>
+        <label><input type="radio" name="l3q7" value="a"> padding</label>
+        <label><input type="radio" name="l3q7" value="b"> margin</label>
+        <label><input type="radio" name="l3q7" value="c"> border-radius</label>
+        <label><input type="radio" name="l3q7" value="d"> font-weight</label>
+      </div>
+<div class="q" data-q="8">
+        <p>8. Flexbox көбіне не үшін тиімді?</p>
+        <label><input type="radio" name="l3q8" value="a"> Файлды сақтау</label>
+        <label><input type="radio" name="l3q8" value="b"> Сурет салу</label>
+        <label><input type="radio" name="l3q8" value="c"> Кодты қысқарту</label>
+        <label><input type="radio" name="l3q8" value="d"> Элементтерді қатар/баған бойынша орналастыру</label>
+      </div>
+<div class="q" data-q="9">
+        <p>9. Дөңгелектеу (бұрышты жұмсарту) қасиеті:</p>
+        <label><input type="radio" name="l3q9" value="a"> round</label>
+        <label><input type="radio" name="l3q9" value="b"> smooth</label>
+        <label><input type="radio" name="l3q9" value="c"> border-radius</label>
+        <label><input type="radio" name="l3q9" value="d"> edge</label>
+      </div>
+<div class="q" data-q="10">
+        <p>10. Қаріп өлшемін өзгерту қасиеті:</p>
+        <label><input type="radio" name="l3q10" value="a"> font-size</label>
+        <label><input type="radio" name="l3q10" value="b"> text-color</label>
+        <label><input type="radio" name="l3q10" value="c"> padding</label>
+        <label><input type="radio" name="l3q10" value="d"> background</label>
+      </div>
+        <div class="btnrow">
+        <button class="btn primary" type="submit">Тексеру</button>
+      </div>
+      </div>
+
+      <aside class="quizResultBox" aria-live="polite">
+        <h4>Нәтиже</h4>
+        <p class="result">Тестті орындап, «Тексеру» батырмасын басыңыз.</p>
+        <div class="resultCounts"></div>
+        <div class="resultHint small">Нәтиже осы жерде бірден көрсетіледі.</div>
+      </aside>
+    </div>
+  </form>
+</section> <section class="card testPanel" id="test-l4" data-test-panel="l4" hidden>
+  <div class="testPanelHead">
+    <h3>4) JavaScript-тен танысу (10 сұрақ)</h3>
+    <a class="btn" href="theory.html#l4">Сабаққа оралу</a>
+  </div>
+
+  <form class="quiz" data-quiz="l4" id="quiz-l4">
+    <div class="quizLayout">
+      <div class="quizQuestions">
+        <div class="q" data-q="1">
+        <p>1. JavaScript көбіне не үшін қолданылады?</p>
+        <label><input type="radio" name="l4q1" value="a"> Веб-бетті тек бояу үшін</label>
+        <label><input type="radio" name="l4q1" value="b"> Интерактив/логика қосу үшін</label>
+        <label><input type="radio" name="l4q1" value="c"> Қатты диск форматтау</label>
+        <label><input type="radio" name="l4q1" value="d"> Тек сурет салу</label>
+      </div>
+<div class="q" data-q="2">
+        <p>2. DOM дегеніміз:</p>
+        <label><input type="radio" name="l4q2" value="a"> Графикалық редактор</label>
+        <label><input type="radio" name="l4q2" value="b"> Интернет провайдер</label>
+        <label><input type="radio" name="l4q2" value="c"> Файл атауы</label>
+        <label><input type="radio" name="l4q2" value="d"> HTML құжатының объектілік моделі</label>
+      </div>
+<div class="q" data-q="3">
+        <p>3. Айнымалы жариялау мысалы:</p>
+        <label><input type="radio" name="l4q3" value="a"> let a = 5;</label>
+        <label><input type="radio" name="l4q3" value="b"> color: red;</label>
+        <label><input type="radio" name="l4q3" value="c"> &lt;p&gt;a&lt;/p&gt;</label>
+        <label><input type="radio" name="l4q3" value="d"> #id { }</label>
+      </div>
+<div class="q" data-q="4">
+        <p>4. Оқиға (event) мысалы:</p>
+        <label><input type="radio" name="l4q4" value="a"> padding</label>
+        <label><input type="radio" name="l4q4" value="b"> border</label>
+        <label><input type="radio" name="l4q4" value="c"> click</label>
+        <label><input type="radio" name="l4q4" value="d"> font-size</label>
+      </div>
+<div class="q" data-q="5">
+        <p>5. Элементті таңдауға арналған әдіс:</p>
+        <label><input type="radio" name="l4q5" value="a"> makeColor()</label>
+        <label><input type="radio" name="l4q5" value="b"> document.querySelector()</label>
+        <label><input type="radio" name="l4q5" value="c"> html.select()</label>
+        <label><input type="radio" name="l4q5" value="d"> css.find()</label>
+      </div>
+<div class="q" data-q="6">
+        <p>6. Оқиға тыңдаушысы қалай қосылады?</p>
+        <label><input type="radio" name="l4q6" value="a"> addCss()</label>
+        <label><input type="radio" name="l4q6" value="b"> setHTML()</label>
+        <label><input type="radio" name="l4q6" value="c"> makeLink()</label>
+        <label><input type="radio" name="l4q6" value="d"> addEventListener()</label>
+      </div>
+<div class="q" data-q="7">
+        <p>7. Функция мысалы:</p>
+        <label><input type="radio" name="l4q7" value="a"> function hi(){ return "Сәлем"; }</label>
+        <label><input type="radio" name="l4q7" value="b"> h1 { }</label>
+        <label><input type="radio" name="l4q7" value="c"> &lt;img&gt;</label>
+        <label><input type="radio" name="l4q7" value="d"> meta charset</label>
+      </div>
+<div class="q" data-q="8">
+        <p>8. Мәтінді өзгерту үшін жиі қолданылатын қасиет:</p>
+        <label><input type="radio" name="l4q8" value="a"> margin</label>
+        <label><input type="radio" name="l4q8" value="b"> padding</label>
+        <label><input type="radio" name="l4q8" value="c"> textContent</label>
+        <label><input type="radio" name="l4q8" value="d"> border</label>
+      </div>
+<div class="q" data-q="9">
+        <p>9. JavaScript коды әдетте қайда жазылады?</p>
+        <label><input type="radio" name="l4q9" value="a"> Тек CSS файлына</label>
+        <label><input type="radio" name="l4q9" value="b"> &lt;script&gt; ішінде немесе .js файлда</label>
+        <label><input type="radio" name="l4q9" value="c"> Тек сурет ішінде</label>
+        <label><input type="radio" name="l4q9" value="d"> Word құжатында</label>
+      </div>
+<div class="q" data-q="10">
+        <p>10. Батырма басылғанда әрекет ету — бұл:</p>
+        <label><input type="radio" name="l4q10" value="a"> HTML атрибуты</label>
+        <label><input type="radio" name="l4q10" value="b"> CSS селекторы</label>
+        <label><input type="radio" name="l4q10" value="c"> URL</label>
+        <label><input type="radio" name="l4q10" value="d"> Оқиға (event) арқылы орындалады</label>
+      </div>
+        <div class="btnrow">
+        <button class="btn primary" type="submit">Тексеру</button>
+      </div>
+      </div>
+
+      <aside class="quizResultBox" aria-live="polite">
+        <h4>Нәтиже</h4>
+        <p class="result">Тестті орындап, «Тексеру» батырмасын басыңыз.</p>
+        <div class="resultCounts"></div>
+        <div class="resultHint small">Нәтиже осы жерде бірден көрсетіледі.</div>
+      </aside>
+    </div>
+  </form>
+</section>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 • Тесттер • “Web жобалау” онлайн оқулығы
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Профиль | Web жобалау</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a class="skip" href="#content">Негізгі мазмұнға өту</a>
+
+<header>
+  <div class="topbar">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">W</div>
+      <div>
+        <h1>Web жобалау</h1>
+        <p class="sub">Онлайн оқулық (HTML • CSS • JavaScript)</p>
+      </div>
+    </div>
+
+    <nav aria-label="Негізгі мәзір">
+      <a class="navlink" href="index.html">Басты бет</a>
+      <a class="navlink" href="theory.html">Теориялық сабақтар</a>
+      <a class="navlink" href="tests.html">Тесттер</a>
+      <a class="navlink" href="glossary.html">Глоссарий</a>
+      <a class="navlink" href="trainer.html">Тренажер</a>
+      <a class="navlink" href="feedback.html">Кері байланыс</a>
+      <a class="navlink active" href="profile.html">Профиль</a>
+      <a class="navlink" href="author.html">Автор</a>
+    </nav>
+    <div class="profileContainer"></div>
+  </div>
+</header>
+
+<main id="content" class="profilePage">
+  <section class="hero">
+    <span class="badge"><b>Профиль</b> • Деректерді басқару</span>
+    <h2>Оқушының профилі</h2>
+    <p class="small">
+      Бұл бетте өз деректеріңізді жаңарта аласыз және оқу прогресіңізді көресіз.
+    </p>
+  </section>
+
+  <div class="grid profileStd">
+    <section class="card">
+      <h3>Жеке деректер</h3>
+
+      <form id="profileForm" class="authForm" novalidate>
+        <div class="field">
+          <label for="profName">Аты-жөні (ФИО)</label>
+          <input id="profName" type="text" placeholder="Мысалы: Әлиев Нұржан" required />
+        </div>
+
+        <div class="field">
+          <label for="profLogin">Логин</label>
+          <input id="profLogin" type="text" readonly />
+          <div class="help">Логин өзгермейді (тек оқу үшін).</div>
+        </div>
+
+        <div class="twoCols">
+          <div class="field">
+            <label for="birthYear">Туған жылы</label>
+            <input id="birthYear" type="number" inputmode="numeric" placeholder="Мысалы: 2009" />
+          </div>
+          <div class="field">
+            <label for="birthMonth">Туған айы</label>
+            <input id="birthMonth" type="number" inputmode="numeric" placeholder="1–12" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="birthDay">Туған күні</label>
+          <input id="birthDay" type="number" inputmode="numeric" placeholder="1–31" />
+        </div>
+
+        <div class="twoCols">
+          <div class="field">
+            <label for="school">Мектеп</label>
+            <input id="school" type="text" placeholder="Мысалы: №12 мектеп-лицей" />
+          </div>
+          <div class="field">
+            <label for="grade">Сынып</label>
+            <input id="grade" type="text" placeholder="Мысалы: 9А" />
+          </div>
+        </div>
+
+        <div class="btnrow">
+          <button class="btn primary" type="submit">Сақтау</button>
+        </div>
+      </form>
+
+      <div class="notice" id="profileNotice" role="status" aria-live="polite"></div>
+    </section>
+
+    <aside class="card">
+      <h3>Оқу прогресі</h3>
+      <div class="progressBar" aria-label="Прогресс жолағы">
+        <div id="progressFill"></div>
+      </div>
+
+      <div class="progressMeta">
+        <div class="small">Жалпы прогресс</div>
+        <div><b id="progressPercent">0%</b></div>
+      </div>
+
+      <hr class="sep" />
+      <div class="small"><b>Сабақтар бойынша:</b></div>
+      <div id="progressList" style="margin-top:10px;"></div>
+
+      <div class="callout teal" style="margin-top:14px;">
+        Прогресс <b>әр сабақтың тестін 100% дұрыс</b> орындаған кезде өседі.
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  © 2026 • “Web жобалау” онлайн оқулығы
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

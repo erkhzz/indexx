@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+
+<html lang="kk">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Теориялық сабақтар | Web жобалау</title>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip" href="#content">Негізгі мазмұнға өту</a>
+<header>
+<div class="topbar">
+<div class="brand">
+<div aria-hidden="true" class="logo">W</div>
+<div>
+<h1>Web жобалау</h1>
+<p class="sub">Теориялық сабақтар</p>
+</div>
+</div>
+<nav aria-label="Негізгі мәзір">
+      <a class="navlink" href="index.html">Басты бет</a>
+      <a class="navlink active" href="theory.html">Теориялық сабақтар</a>
+      <a class="navlink" href="tests.html">Тесттер</a>
+      <a class="navlink" href="glossary.html">Глоссарий</a>
+      <a class="navlink" href="trainer.html">Тренажер</a>
+      <a class="navlink" href="feedback.html">Кері байланыс</a>
+      <a class="navlink" href="profile.html">Профиль</a>
+      <a class="navlink" href="author.html">Автор</a>
+    </nav>
+<div class="profileContainer"></div>
+</div>
+</header>
+<main id="content">
+<section class="hero">
+<h2>Теориялық бөлім</h2>
+<p>
+      Бұл бөлімде Web-жобалаудың 4 негізгі сабағы берілген. Әр сабақта түсіндірме, мысал және қысқа тапсырмалар арқылы білімді бекітесіз.
+    </p>
+<div class="slideshow" data-interval="4500" aria-label="Слайд-шоу">
+  <div class="slides">
+    <div class="slide">
+      <div class="slideTop">
+        <div class="slideTitle">Ереже</div>
+        <div class="slideTag">HTML</div>
+      </div>
+      <p class="slideText">Тегтерді дұрыс жабу және мағыналы (семантикалық) тегтерді қолдану бетті түсінікті етеді.</p>
+    </div>
+    <div class="slide">
+      <div class="slideTop">
+        <div class="slideTitle">Кеңес</div>
+        <div class="slideTag">CSS</div>
+      </div>
+      <p class="slideText">Дизайн жинақы болсын: 2–3 негізгі түс, жеткілікті аралық, оқуға ыңғайлы қаріп өлшемі.</p>
+    </div>
+    <div class="slide">
+      <div class="slideTop">
+        <div class="slideTitle">Тәжірибе</div>
+        <div class="slideTag">JS</div>
+      </div>
+      <p class="slideText">Интерактивті шағын қадаммен бастаңыз: батырмаға click оқиғасын қосып, мәтінді өзгертіңіз.</p>
+    </div>
+  </div>
+  <div class="dots" aria-label="Слайдты таңдау"></div>
+</div>
+
+<div class="tipline">
+<span class="tip">📘 Мақсат: HTML + CSS + JS негіздерін меңгеру</span>
+<span class="tip">🧩 Әр сабақта: ереже + мысал</span>
+<span class="tip">🧠 Өзін-өзі тексеру сұрақтары бар</span>
+</div>
+</section>
+<!-- 1 -->
+<section class="theorySplit" id="theorySplit">
+  <aside class="card theorySidebar" aria-label="Теориялық сабақ мәзірі">
+    <h3>Тақырыптар</h3>
+    <p class="small">Сол жақ мәзірден тақырыпты таңдаңыз. Таңдалған сабақ оң жақта ашылады.</p>
+    <div class="topicNav">
+      <button class="topicNavBtn active" type="button" data-target="l1">1. Web-жобалау негізі</button>
+      <button class="topicNavBtn" type="button" data-target="l2">2. Веб-бет жасау</button>
+      <button class="topicNavBtn" type="button" data-target="l3">3. CSS ұғымы</button>
+      <button class="topicNavBtn" type="button" data-target="l4">4. JavaScript танысу</button>
+    </div>
+    <div class="small" style="margin-top:8px;color:var(--muted)">
+      Тақырыпты қайта бассаңыз, сабақты жиюға (свернуть) болады.
+    </div>
+  </aside>
+
+  <div class="theoryPanels">
+    <section class="card lesson foldLesson" id="l1">
+  <details class="lessonDetails" open>
+    <summary>
+      <span class="lessonSummaryTitle">1. Web-жобалау негізі</span>
+      <span class="lessonSummaryHint">Ашу / Жабу</span>
+    </summary>
+    <div class="lessonBody">
+
+<div class="meta">
+<span class="pill">Нәтиже: түсіндіру</span>
+<span class="pill">Дағды: жоспарлау</span>
+<span class="pill">Тақырып: веб қалай жұмыс істейді?</span>
+</div>
+<div class="callout">
+<b>Оқу мақсаты:</b>
+      Web-жобалау ұғымын түсіндіру; клиент–сервер моделін сипаттау; URL, HTTP/HTTPS және файл түрлерін (HTML, CSS, JS) ажырату.
+    </div>
+<h4>Тірек сөздер</h4>
+<p class="small">
+      Web, браузер, сервер, клиент, URL, HTTP/HTTPS, сұраныс (request), жауап (response), статус-код, кэш, семантика.
+    </p>
+<h4>Веб қалай жұмыс істейді?</h4>
+<p class="small">
+      Веб-бетті ашқанда браузер серверге сұраныс жібереді. Сервер жауап ретінде HTML, CSS, JavaScript және медиа файлдарды береді.
+      Браузер оларды біріктіріп, экранға шығарады. Бұл процесс <b>клиент–сервер</b> байланысына негізделген.
+    </p><p class="small">Браузер алдымен домен атын сервердің IP-мекенжайына сәйкестендіру үшін DNS жүйесін қолданады. Содан кейін HTTPS болса, қауіпсіз байланыс орнату үшін шифрлау келісімі (TLS) орындалады. Осыдан кейін ғана HTTP сұранысы жіберіліп, серверден жауап келеді. Жауап құрамында тек бет мәтіні емес, қосымша файлдарға сілтемелер де болады.</p><p class="small">HTML — бет құрылымының негізі болғандықтан, браузер оны оқи салысымен DOM ағашын құрастырады. CSS файлдары келгенде браузер стиль ережелерін есептеп, элементтердің нақты өлшемі мен орнын анықтайды. JavaScript орындалғанда беттегі кейбір элементтер өзгеруі, жаңа мәлімет жүктелуі немесе пайдаланушыға хабарлама шығуы мүмкін. Сондықтан бір сайттың жұмысы — бірнеше файлдың бірлескен нәтижесі.</p><p class="small">Кейде бет тез ашылады, себебі браузер бұрын жүктелген файлдарды кэште сақтайды. Бірақ кэш тым ескі болса, жаңа өзгерістер көрінбеуі мүмкін — онда парақты жаңарту қажет. Веб-жобалауда файл атауын түсінікті қою, құрылымды реттеу және қажетсіз үлкен суреттерді қолданбау маңызды. Бұл пайдаланушыға ыңғайлы әрі жылдам сайт жасауға көмектеседі.</p>
+<div class="infogrid">
+<div class="info">
+<div class="title"><span class="icon">🏗️</span> HTML — құрылым</div>
+<p>Мазмұнды логикамен орналастырады: тақырып, абзац, тізім, бөлімдер, сурет, сілтеме.</p>
+</div>
+<div class="info">
+<div class="title"><span class="icon">🎨</span> CSS — стиль</div>
+<p>Көріністі реттейді: түс, өлшем, арақашықтық, орналасу, бейімделу (responsive), анимация.</p>
+</div>
+<div class="info">
+<div class="title"><span class="icon">⚙️</span> JavaScript — әрекет</div>
+<p>Интерактив береді: батырма әрекеті, форма тексеру, есептеу, элементті өзгерту.</p>
+</div>
+</div>
+<h4 style="margin-top:12px">Веб-бетті ашу кезеңдері (қадамдап)</h4>
+<table class="tbl">
+<tr><th>Қадам</th><th>Не болады?</th></tr>
+<tr><td><b>1</b></td><td>Пайдаланушы URL енгізеді немесе сілтемені басады.</td></tr>
+<tr><td><b>2</b></td><td>Браузер серверге HTTP/HTTPS сұраныс жібереді.</td></tr>
+<tr><td><b>3</b></td><td>Сервер жауап береді: HTML және басқа файлдар (CSS, JS, суреттер).</td></tr>
+<tr><td><b>4</b></td><td>Браузер HTML-ді оқиды, стильді қолданады, JavaScript-ті іске қосады.</td></tr>
+<tr><td><b>5</b></td><td>Бет экранда көрінеді; қолданушы әрекеттеріне жауап бере бастайды.</td></tr>
+</table>
+<div class="media-grid">
+<figure class="figure domFigure">
+<div aria-label="Клиент–сервер диаграммасы" class="svgwrap">
+<!-- Client-server diagram with animation -->
+<svg role="img" viewBox="0 0 520 240">
+<defs>
+<lineargradient id="g1" x1="0" x2="1">
+<stop offset="0" stop-color="#cfe6ff"></stop>
+<stop offset="1" stop-color="#d1fae5"></stop>
+</lineargradient>
+</defs>
+<rect fill="white" height="180" rx="18" stroke="rgba(229,231,235,.95)" width="220" x="14" y="18"></rect>
+<rect fill="white" height="180" rx="18" stroke="rgba(229,231,235,.95)" width="220" x="286" y="18"></rect>
+<rect fill="url(#g1)" height="44" rx="14" stroke="rgba(30,136,229,.25)" width="180" x="34" y="46"></rect>
+<rect fill="url(#g1)" height="44" rx="14" stroke="rgba(14,165,164,.25)" width="180" x="306" y="46"></rect>
+<text fill="#0f2c5a" font-family="system-ui" font-size="16" font-weight="700" text-anchor="middle" x="124" y="74">Клиент</text>
+<text fill="#0b3a3a" font-family="system-ui" font-size="16" font-weight="700" text-anchor="middle" x="396" y="74">Сервер</text>
+<text fill="#6b7280" font-family="system-ui" font-size="12" text-anchor="middle" x="124" y="118">Браузер</text>
+<text fill="#6b7280" font-family="system-ui" font-size="12" text-anchor="middle" x="396" y="118">HTML/CSS/JS файлдар</text>
+<line class="route" stroke="rgba(30,136,229,.55)" stroke-width="4" x1="240" x2="280" y1="110" y2="110"></line>
+<line class="route" stroke="rgba(14,165,164,.55)" stroke-width="4" x1="280" x2="240" y1="140" y2="140"></line>
+<!-- moving packets -->
+<g transform="translate(250 100)">
+<circle class="packet" fill="rgba(30,136,229,.95)" r="8"></circle>
+</g>
+<g transform="translate(250 130)">
+<circle class="packet back" fill="rgba(14,165,164,.95)" r="8"></circle>
+</g>
+<text fill="#6b7280" font-family="system-ui" font-size="11" text-anchor="middle" x="260" y="88">Сұраныс</text>
+<text fill="#6b7280" font-family="system-ui" font-size="11" text-anchor="middle" x="260" y="162">Жауап</text>
+</svg>
+</div>
+<figcaption class="cap">
+<b>Графика:</b> Клиент (браузер) серверге сұраныс жібереді, сервер жауап береді. Нүктелердің қозғалысы — процесс анимациясы.
+        </figcaption>
+</figure>
+<figure class="figure">
+<div aria-label="URL құрылымы (инфографика)" class="svgwrap">
+<svg role="img" viewBox="0 0 520 240">
+<rect fill="white" height="188" rx="18" stroke="rgba(229,231,235,.95)" width="484" x="18" y="26"></rect>
+<text fill="#111827" font-family="system-ui" font-size="14" font-weight="900" x="42" y="56">URL мысалы</text>
+<rect fill="rgba(30,136,229,.06)" height="46" rx="14" stroke="rgba(30,136,229,.20)" width="436" x="42" y="74"></rect>
+<text fill="#0f2c5a" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" x="60" y="104">
+              https://example.com/books/theory.html
+            </text>
+<g fill="#6b7280" font-family="system-ui" font-size="12">
+<text x="42" y="150">https</text>
+<text x="128" y="150">example.com</text>
+<text x="252" y="150">/books/</text>
+<text x="395" y="150">theory.html</text>
+</g>
+<g fill="#111827" font-family="system-ui" font-size="12" font-weight="800">
+<text x="42" y="174">Протокол</text>
+<text x="128" y="174">Домен</text>
+<text x="252" y="174">Қапшық (path)</text>
+<text x="395" y="174">Файл</text>
+</g>
+<g>
+<line class="route" stroke="rgba(14,165,164,.55)" stroke-width="3" x1="58" x2="58" y1="124" y2="140"></line>
+<line class="route" stroke="rgba(14,165,164,.55)" stroke-width="3" x1="162" x2="162" y1="124" y2="140"></line>
+<line class="route" stroke="rgba(14,165,164,.55)" stroke-width="3" x1="274" x2="274" y1="124" y2="140"></line>
+<line class="route" stroke="rgba(14,165,164,.55)" stroke-width="3" x1="420" x2="420" y1="124" y2="140"></line>
+</g>
+</svg>
+</div>
+<figcaption class="cap">
+<b>Инфографика:</b> URL — веб-ресурстың мекенжайы: протокол + домен + жол (path) + файл атауы.
+        </figcaption>
+</figure>
+</div>
+<h4 style="margin-top:12px">HTTP жауаптарының мысалдары</h4>
+<p class="small">
+      Сервер жауап бергенде <b>статус-код</b> қайтарады. Ең жиі кездесетіндері:
+    </p>
+<table class="tbl">
+<tr><th>Код</th><th>Мағынасы</th><th class="muted">Мысал жағдай</th></tr>
+<tr><td><b>200</b></td><td>Сұраныс сәтті орындалды</td><td class="muted">Бет дұрыс ашылды</td></tr>
+<tr><td><b>301/302</b></td><td>Басқа мекенжайға бағыттау</td><td class="muted">Сілтеме өзгерген</td></tr>
+<tr><td><b>404</b></td><td>Бет/файл табылмады</td><td class="muted">Қате URL немесе файл жоқ</td></tr>
+<tr><td><b>500</b></td><td>Сервер ішкі қатесі</td><td class="muted">Серверде ақау</td></tr>
+</table><h4>Front-end және Back-end (қысқаша)</h4><p class="small">Веб-жобада екі негізгі бағыт бар: front-end және back-end. Front-end — пайдаланушы көретін бөлік: интерфейс, батырмалар, мәтін, дизайн және интерактив (HTML/CSS/JS). Back-end — сервер жағындағы логика: дерекқор, тіркелу, есептеу, файл сақтау сияқты қызметтер. Көп сайтта бұл екі бөлік бірге жұмыс істейді: front-end сұрайды, back-end жауап береді.</p><p class="small">Мектеп деңгейінде сіз ең алдымен front-end негізін үйренесіз, себебі оны браузерде бірден көріп тексеруге болады. Дегенмен қауіпсіздік пен этика қағидаларын да есте ұстау керек: жеке мәліметті жарияламау, күмәнді сілтемелерді ашпау және авторлық құқықты сақтау. Мысалы, сурет қолдансаңыз, оның ашық лицензиясы бар-жоғын тексерген дұрыс. Бұл да — жауапты веб-жобалаудың бір бөлігі.</p>
+<details style="margin-top:12px">
+<summary>Есте сақта: Семантика не үшін маңызды?</summary>
+<div class="small">
+<b>Семантикалық HTML</b> (мысалы: <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;footer&gt;</code>)
+        мазмұнның мағынасын көрсетеді. Бұл қолжетімділікке, іздеу жүйесіне және браузердің дұрыс жұмыс істеуіне көмектеседі.
+      </div>
+</details>
+<div class="callout teal" style="margin-top:12px">
+<b>Цифрлық қауіпсіздік:</b> жеке дерек енгізетін сайттарда <b>HTTPS</b> және сенімді доменге назар аударыңыз.
+      Бейтаныс файлдарды жүктемес бұрын мұғалімнен/ата-анадан сұраған дұрыс.
+    </div>
+<div class="callout" style="margin-top:12px">
+<b>Өзін-өзі тексеру</b>
+<ol class="small" style="margin:8px 0 0">
+<li>Клиент пен сервердің айырмасы қандай?</li>
+<li>HTML, CSS, JavaScript әрқайсысы не үшін керек?</li>
+<li>404 статус-коды нені білдіреді?</li>
+<li>URL-дің 3 бөлігін атаңыз.</li>
+</ol>
+</div>
+<hr class="sep"/>
+<div class="callout teal">
+<b>Қорытынды:</b> Web-жобалау — құрылым (HTML), көрініс (CSS), әрекет (JS) және “клиент–сервер” байланысының бірлігі.
+    </div>
+
+    </div>
+  
+<div class="lessonToTest">
+  <a class="btn primary" href="tests.html#test-l1">Тестке өту</a>
+  <span class="small">(1-сабақ тесті)</span>
+</div>
+</details>
+</section>
+    <section class="card lesson foldLesson" id="l2">
+  <details class="lessonDetails">
+    <summary>
+      <span class="lessonSummaryTitle">2. Веб-бет жасау</span>
+      <span class="lessonSummaryHint">Ашу / Жабу</span>
+    </summary>
+    <div class="lessonBody">
+
+<div class="meta">
+<span class="pill">Нәтиже: қолдану</span>
+<span class="pill">Дағды: құрылымдау</span>
+<span class="pill">Құрал: HTML</span>
+</div>
+<div class="callout">
+<b>Оқу мақсаты:</b>
+      HTML құжатының құрылымын құру; семантикалық тегтерді қолдану; мәтін, тізім, сілтеме, сурет және кесте енгізу.
+    </div>
+<h4>Тірек сөздер</h4>
+<p class="small">Тег, элемент, атрибут, семантика, тақырып (heading), абзац (paragraph), тізім, сілтеме, сурет, alt.</p>
+<h4>HTML құжатының “қаңқасы”</h4>
+<p class="small">
+      HTML құжат <code>&lt;!doctype html&gt;</code> жолынан басталады — бұл браузерге құжатты стандарт режимде көрсетуге көмектеседі.
+      Одан кейін <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code> бөлімдері болады.
+      <code>&lt;head&gt;</code> — қызметтік ақпарат (атау, кодтау, стиль/скрипт), <code>&lt;body&gt;</code> — экрандағы мазмұн.
+    </p><p class="small">HTML-де әр элемент ашылу және жабылу тегтерімен жазылады, бірақ кейбірі өздігінен жабылады (мысалы: <code>&lt;img&gt;</code>, <code>&lt;br&gt;</code>). Тегтердің ішіне салыну реті маңызды: бір элемент екіншісінің ішінде дұрыс жабылуы тиіс. Қателессеңіз, бетте күтпеген орналасу немесе стиль мәселесі пайда болуы мүмкін. Сондықтан кодты ұқыпты жазу — жақсы әдет.</p><p class="small">Семантикалық тегтерді қолданғанда мәтіннің мағынасы анық көрінеді: <code>&lt;nav&gt;</code> — навигация, <code>&lt;main&gt;</code> — негізгі мазмұн, <code>&lt;section&gt;</code> — бөлім, <code>&lt;footer&gt;</code> — төменгі ақпарат. Бұл тек әдемілік үшін емес: экран оқитын бағдарламаларға (қолжетімділік) және іздеу жүйесіне пайдалы. Яғни сайттың сапасы артады.</p><p class="small">Файлдарды реттеу де маңызды: мысалы, суреттерді <b>assets</b> қалтасына, стильді <b>styles.css</b> файлына, ал логиканы <b>app.js</b> файлына бөліп сақтаған дұрыс. Осылайша жобаны түсіну жеңіл болады, әрі болашақта өзгерту тезірек орындалады. Мектеп жобасында да “тәртіп” — нәтиженің кепілі.</p>
+<div class="media-grid">
+<figure class="figure">
+<div aria-label="Семантикалық құрылым" class="svgwrap">
+<svg role="img" viewBox="0 0 520 260">
+<rect fill="white" height="212" rx="20" stroke="rgba(229,231,235,.95)" width="440" x="40" y="24"></rect>
+<rect fill="rgba(30,136,229,.12)" height="38" rx="14" stroke="rgba(30,136,229,.25)" width="400" x="60" y="44"></rect>
+<text fill="#0f2c5a" font-family="system-ui" font-size="12" font-weight="800" text-anchor="middle" x="260" y="68">&lt;header&gt; — жоғарғы бөлік</text>
+<rect fill="rgba(14,165,164,.10)" height="106" rx="14" stroke="rgba(14,165,164,.25)" width="400" x="60" y="90"></rect>
+<rect fill="white" height="70" rx="14" stroke="rgba(229,231,235,.95)" width="240" x="78" y="108"></rect>
+<text fill="#0b3a3a" font-family="system-ui" font-size="12" font-weight="800" text-anchor="middle" x="198" y="130">&lt;main&gt;</text>
+<text fill="#6b7280" font-family="system-ui" font-size="11" text-anchor="middle" x="198" y="152">&lt;article&gt; / &lt;section&gt;</text>
+<rect fill="white" height="70" rx="14" stroke="rgba(229,231,235,.95)" width="132" x="328" y="108"></rect>
+<text fill="#0b3a3a" font-family="system-ui" font-size="12" font-weight="800" text-anchor="middle" x="394" y="130">&lt;aside&gt;</text>
+<text fill="#6b7280" font-family="system-ui" font-size="11" text-anchor="middle" x="394" y="152">қосымша</text>
+<rect fill="rgba(30,136,229,.08)" height="26" rx="12" stroke="rgba(30,136,229,.22)" width="400" x="60" y="204"></rect>
+<text fill="#0f2c5a" font-family="system-ui" font-size="12" font-weight="800" text-anchor="middle" x="260" y="222">&lt;footer&gt; — төменгі бөлік</text>
+</svg>
+</div>
+<figcaption class="cap"><b>Сурет:</b> Семантикалық тегтер бетті мағынасы бойынша бөледі.</figcaption>
+</figure>
+<figure class="figure">
+<div class="svgwrap">
+<pre style="margin:0"><span class="dim">&lt;!-- HTML үлгі қаңқа --&gt;</span>
+&lt;!doctype html&gt;
+&lt;html lang="kk"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;title&gt;Менің бетім&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Сәлем, Web!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</div>
+<figcaption class="cap"><b>Код:</b> Ең қарапайым HTML құжатының құрылымы.</figcaption>
+</figure>
+</div>
+<h4 style="margin-top:12px">Негізгі тегтер (қысқаша кесте)</h4>
+<table class="tbl">
+<tr><th>Тег</th><th>Мақсаты</th><th class="muted">Мысал</th></tr>
+<tr><td><code>&lt;h1&gt;...&lt;/h1&gt;</code></td><td>Негізгі тақырып</td><td class="muted">Бет атауы</td></tr>
+<tr><td><code>&lt;p&gt;...&lt;/p&gt;</code></td><td>Абзац</td><td class="muted">Түсіндірме мәтін</td></tr>
+<tr><td><code>&lt;a href=""&gt;</code></td><td>Сілтеме</td><td class="muted">Басқа бетке өту</td></tr>
+<tr><td><code>&lt;img src="" alt=""&gt;</code></td><td>Сурет қою</td><td class="muted">alt — сурет сипаттамасы</td></tr>
+<tr><td><code>&lt;ul&gt;&lt;li&gt;</code></td><td>Тізім</td><td class="muted">Нүктелі тізім</td></tr>
+<tr><td><code>&lt;section&gt;</code></td><td>Бөлім</td><td class="muted">Тақырыптық блок</td></tr>
+</table><h4>Сурет пен сілтемені дұрыс қолдану</h4><p class="small">Сурет қойған кезде оның өлшемін алдын ала ойлаңыз: өте үлкен файл сайтты баяулатады. Әр суретке <code>alt</code> жазу керек, себебі сурет ашылмаса немесе экран оқитын құрал қолданылса, сол мәтін оқылады. Сілтеме (<code>&lt;a&gt;</code>) мәтіні қысқа әрі нақты болсын: мысалы, “Тесттер бөлімі” немесе “Кері байланыс” сияқты.</p><p class="small">Егер сыртқы сайтқа өтсеңіз, сенімді ресурстарды таңдаңыз және күмәнді жарнамалық сілтемелерден сақ болыңыз. Мектеп тапсырмаларында авторлық құқықты сақтаңыз: интернеттен алынған суретке дереккөз көрсету жақсы мәдениет. Осының бәрі — жауапты цифрлық азамат болудың белгісі.</p>
+<details style="margin-top:12px">
+<summary>Қолжетімділік (Accessibility) бойынша шағын ереже</summary>
+<div class="small">
+<ul>
+<li><b>Тақырыптарды ретімен</b> қолданыңыз: <code>h1</code> → <code>h2</code> → <code>h3</code>…</li>
+<li><b>Суретке alt</b> жазыңыз: мағынасы бар суретте alt міндетті.</li>
+<li><b>Сілтемені түсінікті</b> атаңыз: “Мына жерді бас” емес, нақты атау.</li>
+</ul>
+</div>
+</details>
+<h4>Практикаға жақын тапсырма</h4><p class="small">1) Өз бетіңіз туралы шағын мәтін жазыңыз (<code>h1</code>, <code>p</code>, <code>ul</code>). 2) Бір сурет қосыңыз және <code>alt</code> толтырыңыз. 3) Екі ішкі сілтеме жасаңыз: “Глоссарий” және “Тесттер” бетіне. 4) Кодты сақтап, браузерде ашып тексеріңіз. Осы әрекеттер HTML құрылымын жақсы бекітеді.</p><h4 style="margin-top:12px">Бейне сабақ (қосымша)</h4>
+<div class="figure">
+<div class="ratio">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/916GWv2Qs08" title="HTML tutorial video"></iframe>
+</div>
+<div class="cap">
+<b>Видео:</b> HTML негіздері (интернет керек).
+      </div>
+</div>
+<div class="callout" style="margin-top:12px">
+<b>Өзін-өзі тексеру</b>
+<ol class="small" style="margin:8px 0 0">
+<li><code>&lt;head&gt;</code> пен <code>&lt;body&gt;</code> айырмасы қандай?</li>
+<li>Семантикалық тегтің 2 мысалын жазыңыз.</li>
+<li><code>alt</code> не үшін керек?</li>
+</ol>
+</div>
+<div class="callout teal" style="margin-top:12px">
+<b>Қорытынды:</b> HTML — веб-беттің құрылымы. Дұрыс құрылым кейін CSS/JS жұмысын жеңілдетеді.
+    </div>
+
+    </div>
+  
+<div class="lessonToTest">
+  <a class="btn primary" href="tests.html#test-l2">Тестке өту</a>
+  <span class="small">(2-сабақ тесті)</span>
+</div>
+</details>
+</section>
+    <section class="card lesson foldLesson" id="l3">
+  <details class="lessonDetails">
+    <summary>
+      <span class="lessonSummaryTitle">3. CSS ұғымы</span>
+      <span class="lessonSummaryHint">Ашу / Жабу</span>
+    </summary>
+    <div class="lessonBody">
+
+<div class="meta">
+<span class="pill">Нәтиже: безендіру</span>
+<span class="pill">Дағды: стиль беру</span>
+<span class="pill">Құрал: CSS</span>
+</div>
+<div class="callout">
+<b>Оқу мақсаты:</b>
+      CSS ережесін құру; селекторларды қолдану; box model түсіну; flex/grid арқылы орналасу жасау; қарапайым анимация қосу.
+    </div>
+<h4>Тірек сөздер</h4>
+<p class="small">Селектор, қасиет, мән, каскад, specificity, мұрагерлік, box model, flexbox, grid, responsive, keyframes.</p>
+<h4>CSS ережесінің құрылымы</h4>
+<p class="small">
+      CSS ережесі <b>селектор</b> + <b>қасиет: мән</b> жұбынан тұрады:
+      <code>p { color: blue; }</code> — барлық абзацтың түсін өзгертеді.
+      Селектор ретінде элемент атауы, <code>.class</code>, <code>#id</code> жиі қолданылады.
+    </p><p class="small">CSS-ті үш түрлі жолмен қосуға болады: 1) сыртқы файл арқылы (<code>link</code>), 2) <code>&lt;style&gt;</code> ішінде, 3) элементтің өзіне тікелей жазу (inline style). Мектеп жобаларында ең дұрыс тәсіл — сыртқы <b>styles.css</b> файлын пайдалану. Себебі барлық стиль бір жерде тұрады, қате табу және өзгерту жеңіл болады.</p><p class="small">Каскадтың мәнін түсіну үшін мысал: бір элементке <code>p {color: blue;}</code> және <code>.warning {color: red;}</code> қатар жазылса, класс нақтылығы жоғары болғандықтан мәтін қызыл болады. Ал егер <code>!important</code> қолдансаңыз, ол көбіне басқа ережелерден басым түседі, бірақ оны жиі қолдануға болмайды. Өйткені кодты басқару қиындайды және қателік көбейеді.</p><p class="small">Орналасу жасағанда Flexbox көбіне “бір қатар” немесе “бір баған” логикасына ыңғайлы, ал Grid — кесте сияқты тор жүйесіне жақсы. Мысалы, мәзірді Flexbox-пен, ал карточкалардан тұратын бөлімді Grid-пен жасау тиімді. Осы екі құралды дұрыс таңдау — кәсіби веб-жобалаудың негізі.</p>
+<div class="media-grid">
+<figure class="figure smallFig">
+<div aria-label="Box model диаграммасы" class="svgwrap">
+<svg role="img" viewBox="0 0 520 260">
+<rect fill="rgba(239,246,255,.9)" height="200" rx="22" stroke="rgba(30,136,229,.25)" width="380" x="70" y="30"></rect>
+<text fill="#0f2c5a" font-family="system-ui" font-size="13" font-weight="900" text-anchor="middle" x="260" y="56">margin</text>
+<rect fill="rgba(236,254,255,.92)" height="140" rx="20" stroke="rgba(14,165,164,.25)" width="300" x="110" y="70"></rect>
+<text fill="#0b3a3a" font-family="system-ui" font-size="13" font-weight="900" text-anchor="middle" x="260" y="95">border</text>
+<rect fill="rgba(255,255,255,.95)" height="96" rx="18" stroke="rgba(229,231,235,.95)" width="220" x="150" y="108"></rect>
+<text fill="#111827" font-family="system-ui" font-size="13" font-weight="900" text-anchor="middle" x="260" y="136">padding</text>
+<rect fill="rgba(30,136,229,.10)" height="44" rx="14" stroke="rgba(30,136,229,.28)" width="144" x="188" y="146"></rect>
+<text fill="#0f2c5a" font-family="system-ui" font-size="13" font-weight="900" text-anchor="middle" x="260" y="174">content</text>
+</svg>
+</div>
+<figcaption class="cap"><b>Сурет:</b> Box model — content → padding → border → margin.</figcaption>
+</figure>
+<figure class="figure smallFig">
+<div aria-label="Flex және Grid айырмасы" class="svgwrap">
+<svg role="img" viewBox="0 0 520 260">
+<rect fill="white" height="204" rx="18" stroke="rgba(229,231,235,.95)" width="220" x="30" y="28"></rect>
+<text fill="#111827" font-family="system-ui" font-size="13" font-weight="900" text-anchor="middle" x="140" y="58">Flexbox (1 өлшем)</text>
+<rect fill="rgba(30,136,229,.12)" height="40" rx="14" stroke="rgba(30,136,229,.25)" width="160" x="60" y="80"></rect>
+<rect fill="rgba(30,136,229,.10)" height="40" rx="14" stroke="rgba(30,136,229,.25)" width="160" x="60" y="128"></rect>
+<rect fill="rgba(30,136,229,.08)" height="40" rx="14" stroke="rgba(30,136,229,.25)" width="160" x="60" y="176"></rect>
+<text fill="#0f2c5a" font-family="system-ui" font-size="12" font-weight="800" text-anchor="middle" x="140" y="106">қатар/баған</text>
+<rect fill="white" height="204" rx="18" stroke="rgba(229,231,235,.95)" width="220" x="270" y="28"></rect>
+<text fill="#111827" font-family="system-ui" font-size="13" font-weight="900" text-anchor="middle" x="380" y="58">Grid (2 өлшем)</text>
+<g transform="translate(300 76)">
+<rect fill="rgba(14,165,164,.10)" height="54" rx="14" stroke="rgba(14,165,164,.25)" width="64" x="0" y="0"></rect>
+<rect fill="rgba(14,165,164,.10)" height="54" rx="14" stroke="rgba(14,165,164,.25)" width="64" x="74" y="0"></rect>
+<rect fill="rgba(14,165,164,.10)" height="54" rx="14" stroke="rgba(14,165,164,.25)" width="64" x="0" y="64"></rect>
+<rect fill="rgba(14,165,164,.10)" height="54" rx="14" stroke="rgba(14,165,164,.25)" width="64" x="74" y="64"></rect>
+<text fill="#0b3a3a" font-family="system-ui" font-size="12" font-weight="800" text-anchor="middle" x="69" y="144">қатар + баған</text>
+</g>
+</svg>
+</div>
+<figcaption class="cap"><b>Графика:</b> Flexbox — бір бағыт, Grid — екі бағыт.</figcaption>
+</figure>
+</div>
+<h4 style="margin-top:12px">CSS каскады және нақтылық (қысқаша)</h4>
+<table class="tbl">
+<tr><th>Ереже</th><th>Түсінік</th></tr>
+<tr><td><b>Каскад</b></td><td>Бір элементке бірнеше стиль келсе, браузер ең маңыздысын таңдайды.</td></tr>
+<tr><td><b>Specificity</b></td><td><code>#id</code> селекторы көбіне <code>.class</code> және тегтен басым.</td></tr>
+<tr><td><b>Тәртіп</b></td><td>Нақтылық бірдей болса, төменде жазылған ереже үстем болады.</td></tr>
+</table><h4>Оқылымдылық және дизайн мәдениеті</h4><p class="small">Мектеп оқулығы стилінде дизайн ең алдымен оқуға ыңғайлы болуы тиіс: мәтін анық, аралығы жеткілікті, фон көзге жайлы болуы керек. Қаріптің тым ұсақ болмауын және мәтін мен фонның контрастын сақтаған дұрыс. Түстерді көп қолданбай, 2–3 негізгі түспен шектелсеңіз, бет жинақы көрінеді. Сондай-ақ ұзын мәтінді абзацтарға бөліп, тақырыптарды айқын етіп қойыңыз.</p><p class="small">Анимацияны да орнымен қолдану керек: өте жылдам немесе көп қозғалыс оқушының назарын бөледі. Сол себепті ұсақ ауысу эффектілері (fade, hover) жеткілікті. Және <code>prefers-reduced-motion</code> параметрін ескерсеңіз, қозғалысқа сезімтал пайдаланушыларға да ыңғайлы болады.</p>
+<div aria-label="Box model интерактив" class="mini-demo">
+<div class="row">
+<b>Интерактив:</b> Padding және Margin мәндерін өзгертіп көріңіз.
+        <span class="small">(өзгеріс бірден көрінеді)</span>
+</div>
+<div class="rangeRow">
+<label for="padRange">Padding</label>
+<input id="padRange" max="48" min="0" type="range" value="16"/>
+<div class="small" id="padVal">16px</div>
+</div>
+<div class="rangeRow">
+<label for="marRange">Margin</label>
+<input id="marRange" max="48" min="0" type="range" value="10"/>
+<div class="small" id="marVal">10px</div>
+</div>
+<div class="demoBoxArea">
+<div class="demoBox" id="boxDemo">
+<b>Мен — элементпін</b><br/>
+<span class="small">Padding іште, margin сыртта болады.</span>
+</div>
+</div>
+</div>
+<details style="margin-top:12px">
+<summary>Responsive дизайн: 3 негізгі қағида</summary>
+<div class="small">
+<ol>
+<li><b>Икемді тор (fluid layout)</b> — % / flex / grid арқылы орналасу.</li>
+<li><b>Икемді суреттер</b> — суреттерді контейнерге сыйдыру (<code>max-width: 100%;</code>).</li>
+<li><b>Media query</b> — экран өлшеміне қарай стиль өзгерту.</li>
+</ol>
+</div>
+</details>
+<h4 style="margin-top:12px">Бейне (қосымша): CSS Grid құралдары</h4>
+<div class="figure">
+<div class="ratio">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/M8SlBgul8ao" title="CSS Grid DevTools video"></iframe>
+</div>
+<div class="cap">
+<b>Видео:</b> Chrome DevTools-та Grid-ті көру/түзету.
+      </div>
+</div>
+<div class="callout" style="margin-top:12px">
+<b>Өзін-өзі тексеру</b>
+<ol class="small" style="margin:8px 0 0">
+<li>Box model бөліктерін ретімен атаңыз.</li>
+<li><code>#id</code> пен <code>.class</code>
+<li>Responsive дизайн не үшін керек?</li>
+</li></ol>
+</div>
+<div class="callout"><b>Қосымша түсіну үшін</b><ol class="small" style="margin:8px 0 0"><li>Сыртқы CSS файлды қосудың артықшылығы неде?</li><li>Каскад пен нақтылықтың (specificity) байланысын 1 мысалмен түсіндіріңіз.</li><li>Flexbox пен Grid-ті қай жағдайда таңдар едіңіз?</li><li>Неге тым көп анимация қолдануға болмайды?</li></ol></div><div class="callout teal" style="margin-top:12px">
+<b>Қорытынды:</b> CSS — веб-беттің дизайны мен орналасуын жасайды. Келесі сабақта JavaScript арқылы интерактив қосамыз.
+    </div>
+
+    </div>
+  
+<div class="lessonToTest">
+  <a class="btn primary" href="tests.html#test-l3">Тестке өту</a>
+  <span class="small">(3-сабақ тесті)</span>
+</div>
+</details>
+</section>
+    <section class="card lesson foldLesson" id="l4">
+  <details class="lessonDetails">
+    <summary>
+      <span class="lessonSummaryTitle">4. JavaScript-тен танысу</span>
+      <span class="lessonSummaryHint">Ашу / Жабу</span>
+    </summary>
+    <div class="lessonBody">
+
+<div class="meta">
+<span class="pill">Нәтиже: интерактив</span>
+<span class="pill">Дағды: логика</span>
+<span class="pill">Құрал: JavaScript</span>
+</div>
+<div class="callout">
+<b>Оқу мақсаты:</b>
+      айнымалы (<code>let</code>, <code>const</code>), функция, оқиға (event) ұғымдарын түсіну;
+      DOM-нан элемент таңдап, мәтінді өзгерту; <code>addEventListener</code> қолдану; қате табудың негізгі тәсілін білу.
+    </div>
+<h4>Тірек сөздер</h4>
+<p class="small">Айнымалы, const, let, функция, параметр, шарт, цикл, DOM, event, listener, console.</p>
+<h4>let және const (қысқаша ереже)</h4>
+<table class="tbl">
+<tr><th>Түрі</th><th>Қашан қолданамыз?</th><th class="muted">Мысал</th></tr>
+<tr><td><b>const</b></td><td>Мәні қайта тағайындалмайтын кезде</td><td class="muted"><code>const name = "Amen";</code></td></tr>
+<tr><td><b>let</b></td><td>Мәні өзгеретін кезде</td><td class="muted"><code>let score = 0;</code></td></tr>
+</table><h4>Алгоритм ойлау: шағын мысал</h4><p class="small">Мысалы, “батырма басылса — ұпай 1-ге артсын” деген ереже құрайық. Бұл жерде 1) бастапқы ұпайды <code>let score = 0;</code> деп қоямыз, 2) батырманы табамыз, 3) click оқиғасын тыңдаймыз, 4) оқиға болғанда ұпайды арттырып, экрандағы мәтінді жаңартамыз. Осындай қадамдар — алгоритмдік ойлаудың қарапайым үлгісі.</p>
+<h4 style="margin-top:12px">DOM және оқиғалар</h4>
+<p class="small">
+      JavaScript HTML элементтерін табу үшін <code>document.querySelector()</code> қолданады.
+      Ал пайдаланушы әрекетін тыңдау үшін <code>addEventListener</code>
+<div class="media-grid">
+<figure class="figure domFigure">
+  <div class="svgwrap" aria-label="DOM объектілік моделі (инфографика)">
+    <svg role="img" viewBox="0 0 800 300" aria-label="DOM — HTML құрылымының объектілік моделі">
+      <!-- Card -->
+      <rect x="16" y="18" width="768" height="264" rx="18" fill="white" stroke="rgba(229,231,235,.95)"/>
+
+      <!-- Title -->
+      <text x="40" y="50" font-family="system-ui" font-size="14" font-weight="900" fill="#111827">
+        DOM объектілік моделі
+      </text>
+      <text x="40" y="70" font-family="system-ui" font-size="12" fill="#6b7280">
+        HTML элементтері иерархиялық ағаш ретінде ұсынылады
+      </text>
+
+      <!-- Tree area -->
+      <rect x="40" y="92" width="420" height="170" rx="16" fill="rgba(50,84,222,.06)" stroke="rgba(50,84,222,.18)"/>
+      <text x="60" y="116" font-family="system-ui" font-size="12" font-weight="900" fill="#0b1220">DOM ағашы</text>
+
+      <!-- Lines -->
+      <g stroke="rgba(50,84,222,.35)" stroke-width="2.4" stroke-linecap="round">
+        <line x1="250" y1="140" x2="250" y2="158"/>
+        <line x1="250" y1="186" x2="170" y2="206"/>
+        <line x1="250" y1="186" x2="330" y2="206"/>
+      </g>
+
+      <!-- Nodes -->
+      <!-- document -->
+      <rect x="196" y="124" width="108" height="30" rx="12" fill="rgba(43,59,96,.92)" stroke="rgba(50,84,222,.25)"/>
+      <text x="250" y="144" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="900">document</text>
+
+      <!-- html -->
+      <rect x="196" y="156" width="108" height="30" rx="12" fill="rgba(43,59,96,.90)" stroke="rgba(50,84,222,.22)"/>
+      <text x="250" y="176" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="900">&lt;html&gt;</text>
+
+      <!-- head -->
+      <rect x="116" y="206" width="108" height="30" rx="12" fill="rgba(37,51,84,.88)" stroke="rgba(50,84,222,.18)"/>
+      <text x="170" y="226" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="900">&lt;head&gt;</text>
+
+      <!-- body -->
+      <rect x="276" y="206" width="108" height="30" rx="12" fill="rgba(37,51,84,.88)" stroke="rgba(50,84,222,.18)"/>
+      <text x="330" y="226" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="900">&lt;body&gt;</text>
+
+      <!-- Labels -->
+      <text x="104" y="252" font-family="system-ui" font-size="11" fill="#6b7280">head: meta, title</text>
+      <text x="276" y="252" font-family="system-ui" font-size="11" fill="#6b7280">body: h1, p, button</text>
+
+      <!-- JS area -->
+      <rect x="488" y="92" width="276" height="170" rx="16" fill="rgba(127,176,255,.08)" stroke="rgba(50,84,222,.16)"/>
+      <text x="508" y="116" font-family="system-ui" font-size="12" font-weight="900" fill="#0b1220">
+        JavaScript (DOM + event)
+      </text>
+
+      <rect x="508" y="130" width="236" height="44" rx="12" fill="rgba(17,24,39,.04)" stroke="rgba(229,231,235,.95)"/>
+      <text x="520" y="156" font-family="ui-monospace" font-size="11" fill="#0b1220">
+        document.querySelector(...)
+      </text>
+
+      <rect x="508" y="184" width="236" height="44" rx="12" fill="rgba(17,24,39,.04)" stroke="rgba(229,231,235,.95)"/>
+      <text x="520" y="210" font-family="ui-monospace" font-size="11" fill="#0b1220">
+        addEventListener('click', …)
+      </text>
+
+      <!-- Arrow -->
+      <path d="M460 176 C 476 176, 476 176, 488 176" fill="none" stroke="rgba(50,84,222,.45)" stroke-width="3"/>
+      <polygon points="488,176 478,170 478,182" fill="rgba(50,84,222,.45)"/>
+    </svg>
+  </div>
+  <figcaption class="cap"><b>Сурет:</b> DOM — HTML құрылымының объектілік моделі.</figcaption>
+</figure>
+<figure class="figure">
+<div class="svgwrap">
+<pre style="margin:0"><span class="dim">&lt;!-- JS: батырма басқанда мәтінді өзгерту --&gt;</span>
+&lt;button id="btn"&gt;Басыңыз&lt;/button&gt;
+&lt;p id="msg"&gt;Мәтін&lt;/p&gt;
+
+&lt;script&gt;
+  const btn = document.querySelector('#btn');
+  const msg = document.querySelector('#msg');
+
+  btn.addEventListener('click', () =&gt; {
+    msg.textContent = 'Сіз батырманы бастың!';
+  });
+&lt;/script&gt;</pre>
+</div>
+<figcaption class="cap"><b>Код:</b> <code>querySelector</code> элементті табады, <code>addEventListener</code> оқиғаға жауап береді.</figcaption>
+</figure>
+</div>
+<div class="mini-demo">
+<div class="row">
+<b>Интерактив:</b> JavaScript санағыш (DOM + event)
+      </div>
+<div class="btnrow" style="margin-top:10px">
+<button class="btn primary" id="jsDemoBtn" type="button">Басып көр</button>
+</div>
+<div class="out" id="jsDemoOut">Батырманы бассаңыз, мұндағы мәтін өзгереді.</div>
+</div>
+<details style="margin-top:12px">
+<summary>Қате табу: Console қалай көмектеседі?</summary>
+<div class="small">
+        Браузерде <b>F12 → Console</b> ашып, қате хабарламаларды көре аласыз.
+        Тексеру үшін <code>console.log("Тексеру")</code> жазып, мәндердің қалай өзгеретінін бақылаңыз.
+      </div>
+</details>
+<h4 style="margin-top:12px">Бейне (қосымша): DOM events</h4>
+<div class="figure">
+<div class="ratio">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/0fy9TCcX8Uc" title="DOM Events video"></iframe>
+</div>
+<div class="cap"><b>Видео:</b> DOM events туралы түсіндіру.</div>
+</div>
+<div class="callout" style="margin-top:12px">
+<b>Өзін-өзі тексеру</b>
+<ol class="small" style="margin:8px 0 0">
+<li><code>const</code> пен <code>let</code>
+<li>DOM дегеніміз не?</li>
+<li>Оқиғаға жауап беру үшін қандай әдіс қолданылады?</li>
+</li></ol>
+</div>
+<div class="callout"><b>Қорытынды тапсырма</b><p class="small">Өзіңіздің шағын “Калькулятор” немесе “Санағыш” бетіңізді құрастырыңыз: екі батырма (арттыру/азайту), бір мәтін, және нәтижені шығаратын блок болсын. Қате шықса, Console арқылы тексеріңіз. Дайын болған соң, беттер арасындағы ауысу анимациясының қалай жұмыс істейтінін байқап көріңіз.</p></div><div class="callout teal" style="margin-top:12px">
+<b>Қорытынды:</b> JavaScript — веб-бетті “тірілтетін” құрал. Айнымалы, функция және оқиға арқылы интерактив құра аласыз.
+    </div>
+</p><p class="small">JavaScript-те дерек түрлері бар: сан (number), мәтін (string), логикалық мән (boolean), массив (array) және объект (object). Мысалы, оқушының ұпайын сан ретінде, ал аты-жөнін мәтін ретінде сақтауға болады. Осы деректерді салыстыру үшін шарт операторлары қолданылады: <code>if</code>, <code>else</code>. Қайталау керек болса, циклдер көмектеседі: <code>for</code> немесе <code>while</code>.</p><p class="small">Оқиға өңдеуші (event listener) — “құлақ түріп тұратын” код бөлігі. Мысалы, оқушы мәтін тергенде <code>input</code> оқиғасы, ал батырма басқанда <code>click</code> оқиғасы іске қосылады. Осы кезде сіз DOM-дағы элементтің мәтінін, түсін, көрінуін өзгерте аласыз немесе есептеу жүргізесіз. Сондықтан JS — вебті интерактив ететін негізгі құрал.</p><p class="small">Қауіпсіздік жағынан маңызды ереже бар: пайдаланушы енгізген мәтінді “сол күйі” HTML ретінде қоспау керек. Сол үшін көбіне <code>textContent</code> қолдану қауіпсіз, ал <code>innerHTML</code> абайлап қолданылуы тиіс. Мектеп жобаларында да қауіпсіздік дағдысын үйрену пайдалы. Бұл — болашақта үлкен жобалар жасағанда көмектесетін мәдениет.</p>
+    </div>
+  
+<div class="lessonToTest">
+  <a class="btn primary" href="tests.html#test-l4">Тестке өту</a>
+  <span class="small">(4-сабақ тесті)</span>
+</div>
+</details>
+</section>
+  </div>
+</section>
+<section class="card" style="margin-top:16px">
+<h3>Әдебиеттер және дереккөздер</h3>
+<p class="small">
+      Мәтіндегі анықтамалар мен түсіндірулер халықаралық веб-құжаттамаларға сүйеніп жинақталды (ресми және оқу материалдары):
+    </p>
+<ul class="small">
+<li><a href="https://developer.mozilla.org/en-US/curriculum/core/semantic-html/" rel="noopener" target="_blank">MDN: Semantic HTML</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model" rel="noopener" target="_blank">MDN: The box model</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status" rel="noopener" target="_blank">MDN: HTTP response status codes</a></li>
+<li><a href="https://www.w3.org/WAI/tutorials/page-structure/headings/" rel="noopener" target="_blank">W3C WAI: Headings (қолжетімділік)</a></li>
+<li><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/" rel="noopener" target="_blank">W3C WAI: Web Accessibility intro</a></li>
+<li><a href="https://web.dev/articles/responsive-web-design-basics" rel="noopener" target="_blank">web.dev: Responsive web design basics</a></li>
+<li><a href="https://html.spec.whatwg.org/multipage/" rel="noopener" target="_blank">WHATWG: HTML Living Standard</a></li>
+</ul>
+</section>
+</main>
+<footer>
+  © 2026 • Теориялық сабақтар • “Web жобалау” онлайн оқулығы
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

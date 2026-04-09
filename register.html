@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Тіркелу | Web жобалау</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="authBody">
+<main class="authPage" id="content">
+  <div class="authCard" role="region" aria-label="Тіркелу">
+    <div class="authLeft">
+      <div class="authLogo">W</div>
+      <div class="authIll"><img class="authIllImage" src="images/register-icon.jpg" alt="Тіркелу иллюстрациясы"></div>
+      <div class="authLeftText">
+        <div class="authTitle">Web жобалау</div>
+        <div class="authSub">Оқулыққа кіру үшін тіркеліңіз</div>
+      </div>
+    </div>
+
+    <div class="authRight">
+      <h2>Тіркелу</h2>
+      <p class="small">Аты-жөніңіз бен деректеріңізді толтырыңыз.</p>
+
+      <form class="authForm" id="registerForm" novalidate>
+      <div class="field">
+        <label for="regName">Аты-жөні (ФИО)</label>
+        <input id="regName" name="name" type="text" placeholder="Мысалы: Әлиев Нұржан" required />
+      </div>
+      <div class="field">
+        <label for="regLogin">Логин</label>
+        <input id="regLogin" name="login" type="text" placeholder="Мысалы: amen.nur немесе nurzhan10" required />
+        <div class="help" id="loginHelp">Логин тек әріп/сан және <b>. _ -</b> таңбалары: мысалы, <span class="dim">nurzhan-10</span>.</div>
+      </div>
+<div class="twoCols">
+        <div class="field">
+          <label for="regPass">Құпиясөз</label>
+          <div class="passWrap"><input id="regPass" name="password" type="password" placeholder="Кемінде 6 таңба" required /><button class="passToggle" type="button" data-target="regPass" aria-label="Құпиясөзді көрсету/жасыру">Көрсету</button></div>
+        </div>
+        <div class="field">
+          <label for="regPass2">Құпиясөзді қайталаңыз</label>
+          <div class="passWrap"><input id="regPass2" name="password2" type="password" placeholder="Қайта жазыңыз" required /><button class="passToggle" type="button" data-target="regPass2" aria-label="Құпиясөзді көрсету/жасыру">Көрсету</button></div>
+        </div>
+      </div>
+<div class="checkRow">
+        <input id="regAgree" type="checkbox" />
+        <label for="regAgree">Мен өз деректерімді дұрыс толтырғанымды растаймын.</label>
+      </div>
+
+      <div class="btnrow">
+        <button class="btn primary" type="submit">Тіркелу</button>
+        
+      </div>
+
+      
+    </form>
+
+      <div class="authNote small">Тіркелгеннен кейін автоматты түрде “Басты бетке” өтесіз.</div>
+      <div class="notice" id="registerNotice" role="status" aria-live="polite"></div>
+    </div>
+  </div>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

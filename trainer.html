@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Тренажер | Web жобалау</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a class="skip" href="#content">Негізгі мазмұнға өту</a>
+
+<header>
+  <div class="topbar">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">W</div>
+      <div>
+        <h1>Web жобалау</h1>
+        <p class="sub">Тренажер</p>
+      </div>
+    </div>
+
+    <nav aria-label="Негізгі мәзір">
+      <a class="navlink" href="index.html">Басты бет</a>
+      <a class="navlink" href="theory.html">Теориялық сабақтар</a>
+      <a class="navlink" href="tests.html">Тесттер</a>
+      <a class="navlink" href="glossary.html">Глоссарий</a>
+      <a class="navlink active" href="trainer.html">Тренажер</a>
+      <a class="navlink" href="feedback.html">Кері байланыс</a>
+      <a class="navlink" href="profile.html">Профиль</a>
+      <a class="navlink" href="author.html">Автор</a>
+    </nav>
+<div class="profileContainer"></div>
+  </div>
+</header>
+
+<main id="content">
+  <section class="hero trainerHero">
+    <span class="badge"><b>Тренажер</b> • HTML + CSS + JavaScript • бірден нәтиже</span>
+    <h2>Код жазыңыз, бірден көріңіз</h2>
+    <p>
+      Бұл тренажерде сіз үш бөлікті бірге қолданасыз: HTML (құрылым), CSS (дизайн) және JavaScript (интерактив).
+      Іске қосу үшін <span class="kbd">Ctrl</span> + <span class="kbd">Enter</span> пернелерін басуға болады.
+    </p>
+<div class="slideshow" data-interval="4500" aria-label="Слайд-шоу">
+  <div class="slides">
+    <div class="slide">
+      <div class="slideTop">
+        <div class="slideTitle">Ереже</div>
+        <div class="slideTag">HTML</div>
+      </div>
+      <p class="slideText">Тегтерді дұрыс жабу және мағыналы (семантикалық) тегтерді қолдану бетті түсінікті етеді.</p>
+    </div>
+    <div class="slide">
+      <div class="slideTop">
+        <div class="slideTitle">Кеңес</div>
+        <div class="slideTag">CSS</div>
+      </div>
+      <p class="slideText">Дизайн жинақы болсын: 2–3 негізгі түс, жеткілікті аралық, оқуға ыңғайлы қаріп өлшемі.</p>
+    </div>
+    <div class="slide">
+      <div class="slideTop">
+        <div class="slideTitle">Тәжірибе</div>
+        <div class="slideTag">JS</div>
+      </div>
+      <p class="slideText">Интерактивті шағын қадаммен бастаңыз: батырмаға click оқиғасын қосып, мәтінді өзгертіңіз.</p>
+    </div>
+  </div>
+  <div class="dots" aria-label="Слайдты таңдау"></div>
+</div>
+
+
+    <div class="infogrid" style="margin-top:14px">
+      <div class="info">
+        <div class="title">🧱 HTML</div>
+        <p>Тақырып, абзац, тізім, сурет, батырма сияқты элементтер арқылы беттің құрылымын құрасыз.</p>
+      </div>
+      <div class="info">
+        <div class="title">🎨 CSS</div>
+        <p>Түс, өлшем, арақашықтық, орналасу және шағын анимациялармен дизайнын реттейсіз.</p>
+      </div>
+      <div class="info">
+        <div class="title">⚙️ JavaScript</div>
+        <p>Батырма басу, санау, мәтінді өзгерту, шарт қою сияқты әрекеттер арқылы бетті “жандандырасыз”.</p>
+      </div>
+    </div>
+
+    <div class="callout teal" style="margin-top:14px">
+      <b>Кеңес:</b> Алдымен “Үлгі код” батырмасымен бастап, кейін өз идеяңыз бойынша өзгертіңіз.
+      Қателессеңіз, кодты бөліп-бөліп тексеріңіз: алдымен HTML, содан соң CSS, ең соңында JS.
+    </div>
+  </section>
+
+  <div class="trainerGrid" style="margin-top:16px">
+
+    <section class="trainerCard editorCard">
+      <div class="trainerTop">
+        <div class="trainerTitle">
+          <div class="chip">Код</div>
+          <div>
+            <div style="font-weight:900; font-size:15px">Редактор</div>
+            <div class="small">Ctrl+Enter • “Іске қосу” батырмасы</div>
+          </div>
+        </div>
+
+        <div class="trainerActions">
+          <button class="btn" id="loadSample" type="button" title="Үлгі код">Үлгі код</button>
+          <button class="btn primary" id="runCode" type="button" title="Іске қосу">Іске қосу</button>
+          <button class="btn danger" id="clearCode" type="button" title="Тазалау">Тазалау</button>
+        </div>
+      </div>
+
+      <div class="trainerTabs" role="tablist" aria-label="Код түрін таңдау">
+        <button class="tabBtn active" type="button" data-tab="html" role="tab" aria-selected="true">HTML</button>
+        <button class="tabBtn" type="button" data-tab="css" role="tab" aria-selected="false">CSS</button>
+        <button class="tabBtn" type="button" data-tab="js" role="tab" aria-selected="false">JS</button>
+      </div>
+
+      <div class="tabPanel active" data-panel="html" role="tabpanel">
+        <div class="codeHint">HTML: құрылым. Мысалы: <span class="dim">&lt;h1&gt;Тақырып&lt;/h1&gt;</span></div>
+        <textarea id="htmlEditor" class="editorarea" spellcheck="false"
+          placeholder="Мұнда HTML код жазыңыз..."></textarea>
+      </div>
+
+      <div class="tabPanel" data-panel="css" role="tabpanel">
+        <div class="codeHint">CSS: дизайн. Мысалы: <span class="dim">h1 { color: #1e88e5; }</span></div>
+        <textarea id="cssEditor" class="editorarea mini" spellcheck="false"
+          placeholder="Мұнда CSS код жазыңыз..."></textarea>
+      </div>
+
+      <div class="tabPanel" data-panel="js" role="tabpanel">
+        <div class="codeHint">JavaScript: интерактив. Мысалы: <span class="dim">btn.addEventListener('click', ...)</span></div>
+        <textarea id="jsEditor" class="editorarea mini" spellcheck="false"
+          placeholder="Мұнда JavaScript код жазыңыз..."></textarea>
+      </div>
+
+      <div class="trainerBottom small">
+        <b>Жұмыс тәртібі:</b> 1) Үлгі кодты жүктеу 2) Өзгерту 3) Іске қосу 4) Нәтижені тексеру.
+        Егер нәтиже шықпаса, алдымен HTML тегтерінің дұрыс жабылғанын қараңыз.
+      </div>
+
+      <div class="notice" id="trainerNotice" role="status" aria-live="polite"></div>
+    </section>
+
+    <section class="trainerCard previewCard">
+      <div class="previewTop">
+        <div>
+          <div style="font-weight:900; font-size:15px">Нәтиже (Preview)</div>
+          <div class="small">Бұл аймақта сіз жазған код браузерде қалай көрінетінін бақылаңыз.</div>
+        </div>
+        <div class="chip pri">Live</div>
+      </div>
+
+      <div class="previewFrameWrap">
+        <iframe id="previewFrame" title="Нәтиже (Preview)"></iframe>
+      </div>
+
+      <div class="callout" style="margin-top:12px">
+        <b>Тексеру парағы</b>
+        <ol class="small" style="margin:8px 0 0">
+          <li>HTML-де негізгі құрылым бар ма? (<span class="dim">h1, p, button</span>)</li>
+          <li>CSS селекторлары дұрыс жазылды ма? (<span class="dim">.class, #id</span>)</li>
+          <li>JS элементті тапты ма? (<span class="dim">querySelector</span>)</li>
+          <li>Оқиға қосылды ма? (<span class="dim">addEventListener</span>)</li>
+        </ol>
+      </div>
+
+      <div class="callout teal" style="margin-top:12px">
+        <b>Пернетақта лайфхагы:</b> Кез келген өрісте <span class="kbd">Ctrl</span> + <span class="kbd">Enter</span>
+        бассаңыз, бірден іске қосылады.
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  © 2026 • Тренажер • “Web жобалау” онлайн оқулығы
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
